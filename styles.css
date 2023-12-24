@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@200;300;400;500;600;700;900&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 1170px;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    background-color: rgba(245, 248, 250, 1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 39px;
+    padding-inline: 40px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #1d2c3c;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.account-box {
+    width: 91px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 0.375rem;
+    border: 2px solid #646e7a;
+}
+
+.horizontal-line1 {
+    width: calc(100% - 94px);
+    height: 2px;
+    margin-left: 47px;
+    margin-right: 47px;
+    background-color: rgba(224, 230, 234, 1);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin-block-start: 85px;
+}
+
+.left {
+    width: 483px;
+    height: auto;
+    border-radius: 0.375rem;
+    background: #fff;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05);
+    padding-inline: 49px;
+    padding-inline-end: 48px;
+
+    >h2 {
+        font-size: 1.875rem;
+        font-weight: 400;
+        margin-block-start: 41px;
+        text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.left .horizontal-line2 {
+    margin-left: -47px;
+    margin-right: -47px;
+    height: 2px;
+    margin-block-start: 40px;
+    background-color: rgba(224, 230, 234, 1);
+}
+
+.left .basic-info .number,
+.left .pay-info .number {
+    height: 30px;
+    width: 30px;
+    padding: 8px;
+    border: 2px solid #548bc5;
+    border-radius: 50%;
+    color: #548bc5;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-inline-end: 8px;
+}
+
+.left .basic-info {
+    margin-block-start: 36px;
+
+    >p {
+        font-size: 1.125rem;
+        font-weight: 700;
+    }
+
+    >.name {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.left .basic-info .name .input {
+    width: 227px;
+
+    >label {
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+
+    >#firstname {
+        width: 214px;
+        height: 36px;
+        padding-inline-start: 13px;
+        margin-block-start: 8px;
+        font-size: 0.9rem;
+        font-weight: 400;
+        background-color: rgba(237, 239, 242, 1);
+        border: 0;
+        margin-block-end: 15px;
+    }
+
+    >.lastname {
+        margin-inline-start: 30px;
+    }
+
+    >#lastname {
+        width: 213px;
+        height: 36px;
+        margin-inline-start: 30px;
+        padding-inline-start: 13px;
+        margin-block-start: 8px;
+        font-size: 0.9rem;
+        font-weight: 400;
+        background-color: rgba(237, 239, 242, 1);
+        border: 0;
+    }
+}
+
+.left .basic-info .email {
+    width: 100%;
+    max-width: 370px;
+
+    >label {
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+
+    >input {
+        width: 357px;
+        height: 36px;
+        background-color: rgba(237, 239, 242, 1);
+        border: 0;
+        padding-inline-start: 13px;
+        margin-block-start: 8px;
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+}
+
+.left .pay-info {
+    margin-block-start: 36px;
+
+    >p {
+        font-size: 1.125rem;
+        font-weight: 700;
+    }
+}
+
+.left .pay-info .input-box {
+    display: flex;
+    flex-direction: column;
+    width: 483px;
+
+    >label {
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+}
+
+.left .pay-info .input-box .boxes {
+    display: flex;
+
+    >input {
+        height: 36px;
+        font-size: 0.9rem;
+        font-weight: 400;
+        background-color: rgba(237, 239, 242, 1);
+        border: 0;
+        margin-block-start: 8px;
+    }
+
+    #credit-card {
+        width: 350px;
+        padding-inline-start: 13px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+
+    >.date {
+        width: 68px;
+        border-radius: 0px;
+        text-align: end;
+        padding-inline-end: 15px;
+    }
+
+    >.cvc {
+        width: 68px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        text-align: end;
+        padding-inline-end: 15px;
+    }
+}
+
+.left .three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.left .three button {
+    width: 483px;
+    height: 52px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: rgba(3, 142, 125, 1);
+    margin-block-start: 39px;
+
+    >a {
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.left .three .help {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    >.number {
+        height: 20px;
+        width: 20px;
+        padding: 4px;
+        border: 2px solid #548bc5;
+        border-radius: 50%;
+        color: #548bc5;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 700;
+        margin-inline-end: 8px;
+    }
+
+    >p {
+        width: 303px;
+    }
+}
+
+.left .three::after {
+    content: "";
+    width: 100px;
+    height: 1px;
+    background-color: rgba(100, 110, 122, 1);
+    margin: 20px 0;
+    position: absolute;
+    left: 342px;
+    bottom: 35px;
+}
+
+.right {
+    width: 229px;
+    height: 795px;
+    border-radius: 0px, 6px, 6px, 0px;
+    background-color: rgba(17, 121, 191, 1);
+    padding-inline: 46px 37px;
+    color: rgba(255, 255, 255, 1);
+
+    >h3 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-block-start: 42px;
+    }
+}
+
+.right .price .amount {
+    margin-block-start: 3px;
+
+    >.dollar {
+        font-size: 1.5rem;
+        font-weight: 700;
+        position: absolute;
+    }
+
+    >.big99 {
+        font-size: 3.75rem;
+        font-weight: 300;
+        padding-inline-start: 20px;
+    }
+
+    >.year {
+        font-size: 1.125rem;
+        font-weight: 700;
+        padding-inline-start: 18px;
+    }
+}
+
+.right .price .renew {
+    width: 160px;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    margin-block-start: 3px;
+}
+
+.right .check p {
+    font-size: 1rem;
+    font-weight: 700;
+
+    >img {
+        padding-inline-end: 11px;
+    }
+}
+
+.right .need {
+    padding-block-start: 8px;
+
+    >p {
+        font-size: 1rem;
+    }
+
+    >a {
+        font-size: 1rem;
+        font-style: italic;
+        font-weight: 700;
+        color: #fff;
+    }
+}
+
+.right .horizontal-line {
+    width: 224px;
+    height: 2px;
+    opacity: 0.2px;
+    margin-block: 41px;
+    background-color: rgba(255, 255, 255, 0.25);
+
+}
+
+.right .ftp {
+    >p {
+        font-size: 1.125rem;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}
+
+.right .ftp .person {
+    display: flex;
+    align-items: center;
+
+    >img {
+        border-radius: 50%;
+    }
+
+    >span {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-inline-start: 14px;
+    }
+}
+
+footer {
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: center;
+    color: rgba(99, 107, 111, 1);
+    padding-block-start: 33px;
+
+    >a {
+        text-decoration: none;
+        color: rgba(49, 112, 143, 1);
+    }
+}
